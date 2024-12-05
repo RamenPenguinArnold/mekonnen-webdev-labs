@@ -21,3 +21,9 @@ form > * {
 .box {
   height: 160px;
 }
+.card
+{
+  float: inline-start;
+  width: 20%;
+  margin: 5px;
+}

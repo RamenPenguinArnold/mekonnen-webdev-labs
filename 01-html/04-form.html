@@ -10,6 +10,36 @@
     <main>
       <form action="/submit">
         <!-- Add your code here -->
+        <label for="name">Name</label>
+        <input type="text" name="Name" id="name" placeholder="Full Name" />
+        <br />
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" placeholder="Name@pdx.edu" />
+        <br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <input type="radio" name="Favorite" id="Spongebob" />
+          <label for="Spongebob">Spongebob</label>
+          <br />
+          <input type="radio" name="Favorite" id="Sandy" />
+          <label for="Sandy">Sandy</label>
+          <br />
+          <input type="radio" name="Favorite" id="Patrick" />
+          <label for="Patrick">Patrick</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Are You a Fan of The Show?</legend>
+          <input type="checkbox" name="Fan" id="Yes" />
+          <label for="Yes">Yes</label>
+          <br />
+          <input type="checkbox" name="Fan" id="No" />
+          <label for="No">No</label>
+          <br />
+        </fieldset>
+        <br>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
       </form>
     </main>
   </body>

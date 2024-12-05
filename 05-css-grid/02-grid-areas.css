@@ -5,20 +5,67 @@
 .article {
   grid-area: article;
 }
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
+.section {
+  grid-area: section;
+}
 
 .grid-container {
   display: grid;
   height: 97vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
   gap: 10px;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    "header header header header "
+    "aside article article article"
+    "aside article article article"
+    "aside article article article"
+    "section section section section"
+    "section section section section"
+    "footer footer footer footer";
+}
+.grid-item {
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header header header header "
+      "aside aside aside article"
+      "aside aside aside article"
+      "aside aside aside article"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header"
+      "article"
+      "article"
+      "section"
+      "section"
+      "section"
+      "aside"
+      "footer";
+  }
 }

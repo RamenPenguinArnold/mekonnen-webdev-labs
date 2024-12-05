@@ -1,23 +1,204 @@
 .flex-container {
   background-color: rgb(190, 190, 231);
 }
-
+:root {
+  --darkmagenta: #8b008b;
+  --magenta: #ff00ff;
+  --royalblue: #4169e1;
+  --teal: #008080;
+  --violet: #9400d3;
+  --white: #ffffff;
+}
 /* Flex Container 1 */
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.flex-container-1 .flex-item {
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
 
 /* Flex Container 2 */
-
+.flex-container-2 {
+  width: 900px;
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.flex-container-2 .flex-item {
+  align-self: flex-start;
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
 /* Flex Container 3 */
-
+.flex-container-3 {
+  width: 900px;
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: flex-end;
+}
 /* use height: 400px; on the container */
-
+.flex-container-3 .flex-item {
+  height: 30px;
+  margin: 10px;
+  padding: 20px;
+  padding-top: 15px;
+  font-size: 20px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
 /* Flex Container 4 */
-
+.flex-container-4 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  height: 400px;
+  width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-evenly;
+}
+.flex-container-4 .flex-item {
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
 /* Flex Container 5 */
-
+.flex-container-5 {
+  width: 900px;
+  display: flex;
+  height: 400px;
+  align-items: center;
+}
+.flex-container-5 .flex-item.item1 {
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  height: 150px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item2 {
+  margin: 10px;
+  height: 300px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item3 {
+  height: 150px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item4 {
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item5 {
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item6 {
+  height: 150px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item7 {
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
+.flex-container-5 .flex-item.item8 {
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+}
 /* Flex Container 6 */
-
+.flex-container-6 {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
 .flex-container-6 .flex-item {
-  width: 400px;
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--darkmagenta);
+  color: var(--white);
+  flex: 0 0 30%;
 }
 
 /* use height: 300px; on the container */
